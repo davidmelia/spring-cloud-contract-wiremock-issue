@@ -91,6 +91,10 @@
                             <contractPackageRegex>.*test3.*</contractPackageRegex>
                             <baseClassFQN>uk.co.ii.dave.contract.Dave1ContractBase</baseClassFQN>
                         </baseClassMapping>
+                        <baseClassMapping>
+                            <contractPackageRegex>.*test4.*</contractPackageRegex>
+                            <baseClassFQN>uk.co.ii.dave.contract.Dave2ContractBase</baseClassFQN>
+                        </baseClassMapping>                            
                     </baseClassMappings>
                 </configuration>
             </plugin>

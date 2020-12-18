@@ -31,7 +31,6 @@ public abstract class Dave1ContractBase {
   public void setup() throws IOException {
     RestAssured.baseURI = "http://localhost:" + port;
     stubFor(get(urlMatching("/test/cash")).willReturn(aResponse().withHeader("Content-Type", "application/json").withStatus(200).withBody("{\"GBP\":\"1.23\"}")));
-    log.info("init saved data in redis");
   }
 
 }

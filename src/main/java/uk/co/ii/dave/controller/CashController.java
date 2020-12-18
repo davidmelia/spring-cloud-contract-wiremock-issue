@@ -21,9 +21,6 @@ public class CashController {
 
   @GetMapping(value = "/cash", produces = APPLICATION_JSON_VALUE)
   public Mono<Map> getAccount() {
-    System.out.println("*******");
-    System.out.println(properties.getThirdPartyUrl() + "/cash");
-    System.out.println("*******");
     return wc.get().uri(properties.getThirdPartyUrl() + "/cash").retrieve().bodyToMono(Map.class);
   }
 }
